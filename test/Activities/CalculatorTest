@@ -1,0 +1,45 @@
+package Activities;
+
+import Classes.Calc;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class AdditionTest {
+    Calc calc; // instance variable
+    @BeforeEach
+    public void startAllTestWith(){
+           calc = new Calc();
+    }
+    @Test
+    public void testObjectExist(){
+        calc = new Calc();
+        Assertions.assertNotNull(calc);
+    }
+    @Test
+    public void addingNumber(){
+        calc =new Calc();
+        int sum = calc.getSum(3,3);
+        Assertions.assertEquals(6,calc.getSum(3,3));
+    }
+  @Test
+    public void subtractNumbers(){
+        calc = new Calc();
+        Assertions.assertEquals(9, calc.getSubtractNumbers(10,1));
+  }
+  @Test
+    void multiplyNumbers(){
+        Assertions.assertEquals(36, calc.getMultiply(6,6));
+  }
+  @Test
+    void divideNumbers(){
+        Assertions.assertEquals(30,calc.getDivision(300,10));
+  }
+@Test
+    void SquareOf(){
+        Assertions.assertEquals(6,calc.squareOf(36));
+}
+
+
+}

@@ -1,0 +1,23 @@
+/*package tdd;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class BikeTest {
+    @Test
+   public void switchOnBike() {
+        //i have a bike
+        Bike Okada = new Bike();
+        Okada.setBikeOn();
+        boolean bikeOn = Okada.getBikeOn();
+        assertTrue(bikeOn);
+    
+   }
+   @Test
+   public void switchOffBike() {
+       Bike Okada = new Bike();
+       Okada.setBikeOff();
+       boolean bikeOff = Okada.getBikeOff();
+       assertFalse(bikeOff);
+   }*/
